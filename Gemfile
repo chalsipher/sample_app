@@ -6,6 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.2.2'
+gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'sqlite3'
 
 
