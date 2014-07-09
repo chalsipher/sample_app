@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :microposts, dependent: :destroy
   #attr_accessible :email, :name, :password, :password_confirmation,:password_digest
   attr_accessible :email, :name, :password, :password_confirmation,:admin
   #attr_accessor :password, :password_confirmation
