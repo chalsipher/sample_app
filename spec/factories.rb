@@ -5,11 +5,11 @@ FactoryGirl.define do
     password "foobar"
     password_confirmation "foobar"
 
-<<<<<<< HEAD
+
      factory :admin do
-=======
+
     factory :admin do
->>>>>>> upto-f-f
+
       admin true
     end
   end
@@ -18,4 +18,5 @@ FactoryGirl.define do
     content "Lorem ipsum"
     user
   end
+end
 end
