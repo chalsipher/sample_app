@@ -12,5 +12,8 @@ def sign_in(user, options={})
     fill_in "Password", with: user.password
     click_button "Sign in"
   end
+<<<<<<< HEAD
 
+=======
+>>>>>>> continue-chapter9
 end
