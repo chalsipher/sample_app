@@ -4,7 +4,11 @@ describe "User pages" do
 
   subject { page }
 
+<<<<<<< HEAD
   describe "index" do
+=======
+ describe "index" do
+>>>>>>> upto-f-f
     let(:user) { FactoryGirl.create(:user) }
     before(:each) do
       sign_in user
@@ -28,8 +32,12 @@ describe "User pages" do
       end
     end
 
+<<<<<<< HEAD
 
       describe "delete links" do
+=======
+   describe "delete links" do
+>>>>>>> upto-f-f
 
       it { should_not have_link('delete') }
 
@@ -49,9 +57,14 @@ describe "User pages" do
         it { should_not have_link('delete', href: user_path(admin)) }
       end
     end
+<<<<<<< HEAD
     
   end
   #=========================
+=======
+     
+  end
+>>>>>>> upto-f-f
 
  describe "signup page" do
     before { visit signup_path }

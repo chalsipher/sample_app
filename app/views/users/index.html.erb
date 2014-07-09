@@ -4,7 +4,13 @@
 <%= will_paginate %>
 
 <ul class="users">
+<<<<<<< HEAD
   <%= render @users %>
+=======
+  <% @users.each do |user| %>
+    <%= render user %>
+  <% end %>
+>>>>>>> upto-f-f
 </ul>
 
 <%= will_paginate %>
