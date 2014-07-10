@@ -124,6 +124,35 @@ footer {
 
 /* sidebar */
 
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+
 aside {
   section {
     padding: 10px 0;
@@ -194,6 +223,7 @@ input {
       border-bottom: 1px solid $grayLighter;
     }
   }
+<<<<<<< HEAD
 
 }
 
@@ -201,6 +231,10 @@ input {
 
 
 
+=======
+}
+
+>>>>>>> chapter11-complete
 /* microposts */
 
 .microposts {
@@ -228,4 +262,7 @@ aside {
     margin-bottom: 5px;
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> chapter11-complete

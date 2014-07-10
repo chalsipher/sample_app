@@ -8,7 +8,11 @@
         <%= @user.name %>
       </h1>
     </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
   </aside>
+<<<<<<< HEAD
 <<<<<<< HEAD
 </div>
 <% else %>
@@ -17,6 +21,10 @@
 <% end %> 
 =======
   <div class="span8">
+=======
+  <div class="span8">
+    <%= render 'follow_form' if signed_in? %>
+>>>>>>> chapter11-complete
     <% if @user.microposts.any? %>
       <h3>Microposts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
@@ -25,5 +33,9 @@
       <%= will_paginate @microposts %>
     <% end %>
   </div>
+<<<<<<< HEAD
 </div>
 >>>>>>> user-microposts
+=======
+</div>
+>>>>>>> chapter11-complete

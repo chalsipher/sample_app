@@ -18,5 +18,8 @@ FactoryGirl.define do
     content "Lorem ipsum"
     user
   end
+<<<<<<< HEAD
 end
+=======
+>>>>>>> chapter11-complete
 end

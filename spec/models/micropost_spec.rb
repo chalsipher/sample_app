@@ -28,5 +28,8 @@ describe Micropost do
     before { @micropost.content = "a" * 141 }
     it { should_not be_valid }
   end
+<<<<<<< HEAD
   
+=======
+>>>>>>> chapter11-complete
 end

@@ -42,4 +42,8 @@ describe "Micropost pages" do
       end
     end
   end
+<<<<<<< HEAD
+=======
+
+>>>>>>> chapter11-complete
 end

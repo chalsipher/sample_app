@@ -13,12 +13,16 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20140708064050) do
 =======
 ActiveRecord::Schema.define(:version => 20140709052817) do
 >>>>>>> upto-f-f
 =======
 ActiveRecord::Schema.define(:version => 20140709055358) do
+=======
+ActiveRecord::Schema.define(:version => 20140710045755) do
+>>>>>>> chapter11-complete
 
   create_table "microposts", :force => true do |t|
     t.string   "content"
@@ -28,7 +32,21 @@ ActiveRecord::Schema.define(:version => 20140709055358) do
   end
 
   add_index "microposts", ["user_id", "created_at"], :name => "index_microposts_on_user_id_and_created_at"
+<<<<<<< HEAD
 >>>>>>> user-microposts
+=======
+
+  create_table "relationships", :force => true do |t|
+    t.integer  "follower_id"
+    t.integer  "followed_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
+  add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
+  add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
+>>>>>>> chapter11-complete
 
   create_table "users", :force => true do |t|
     t.string   "name"
