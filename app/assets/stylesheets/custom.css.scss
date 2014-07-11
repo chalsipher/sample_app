@@ -10,6 +10,12 @@ $grayMediumLight: #eaeaea;
   box-sizing: border-box;
 }
 
+/* search fields */
+
+.search{position:absolute;margin-left:200px;margin-top:7px;}
+input.searchfield{width:200px;font-size:14px;}
+.searchbutton{border-radius:2px;}
+.navbar-inner{height:50px;}
 
 /* miscellaneous */
 
@@ -86,7 +92,7 @@ p {
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 10px;
   font-weight: bold;
   line-height: 1;
   &:hover {
@@ -187,12 +193,12 @@ aside {
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   @include box_sizing;
 }
 
 input {
-  height: auto !important;
+  height: auto !important
 }
 
 /* forms */

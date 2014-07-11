@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   has_many :followers, through: :reverse_relationships, source: :follower                                 
   has_many :followed_users, through: :relationships, source: :followed
   #attr_accessible :email, :name, :password, :password_confirmation,:password_digest
-  attr_accessible :email, :name, :password, :password_confirmation,:admin
+  attr_accessible :email, :name, :password, :password_confirmation,:admin,:search
   #attr_accessor :password, :password_confirmation
 
   before_save { self.email = email.downcase }
@@ -28,6 +28,10 @@ class User < ActiveRecord::Base
 
   def User.new_remember_token
     SecureRandom.urlsafe_base64
+  end
+
+  def self.search(query)
+  where(['name LIKE ? OR email LIKE ?', "%#{query}%", "%#{query}%"])
   end
 
   def User.digest(token)

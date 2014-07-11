@@ -3,8 +3,18 @@ class UsersController < ApplicationController
   before_filter :correct_user,   only: [:edit, :update]
   before_filter :admin_user,     only: :destroy
 
+  require 'will_paginate/array'
   def index
+  @search = params[:search]
+  if not @search.to_s.nil?
+   @users = User.search(@search).paginate(page: params[:page])
+ else
    @users = User.paginate(page: params[:page])
+ end 
+  end
+
+  def search
+  @users = User.search(params[:search])
   end
 
   def show
